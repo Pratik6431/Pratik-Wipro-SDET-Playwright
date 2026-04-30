@@ -81,7 +81,7 @@ if(i > j) {
 
 // Calendar --> Week --> final (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
 
-let choice = "a";
+let choice = "c";
 
 switch(choice) {
     case "A":
