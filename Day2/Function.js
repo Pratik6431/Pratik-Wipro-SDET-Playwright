@@ -77,3 +77,25 @@ console.log(animals);
 console.log(animals.splice(0, 1));
 console.log(animals.splice(1, 2));
 console.log(animals.splice(1, 3));
+
+const prices = [10, 20, 30, 40]; // tasks: We have tofind the total of all elements
+
+let s = 0;
+
+for (let i = 0; i < prices.length; i++) {
+
+    s += prices[i]; // s = s + prices[i]
+}
+console.log("Total:", s);
+
+const total = prices.reduce((acc, curr) => { return acc + curr }, 0);
+
+console.log(total);
+// console.log("Sum:", s);
+
+const fruitBasket = ['apple', 'banana', 'cherry', 'apple', 'apple', 'banana', 'pineapple'];
+const tally = fruitBasket.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {}); // intial value of acc is an empty object
+console.log(tally);
