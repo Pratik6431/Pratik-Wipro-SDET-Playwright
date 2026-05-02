@@ -1,0 +1,102 @@
+For git push
+1) git init
+2) Go to github -> Create new repo -> copy https url to that repo
+3) Link our local folder to github
+   command -  git remote add origin https my github url
+4) git add .
+5) git commit -m "Message you want to give"
+6) git push -u origin main
+
+-> After completing all the setup, we need these 3 commands after we change anthing in our code :-
+1) git add .
+2) git commit -m "message"
+3) git push
+
+-> JS datatype
+1) String 2) Numbers :- Represents mathematically value 3) Object :- A collection of key-value pairs of datatype
+
+-> typeof :- operator to find the data type of the variable.
+
+# Conditional Expression
+
+-> if statement :- We will use the if statement to create a block of code when a condition is true.
+                :- Syntax- if (condition) {
+                              // block of the code to be exicuted if the condition is true
+                           }
+
+                           Eg :- if (hour < 18){
+                                   greeting = "GOOD DAY";
+                                }
+
+-> Nested if :- if inside another if statement
+                Eg :- let age = 18;
+                      let country = "INDIA";
+                      let text = "You can drive!";
+
+                      if (country == "INDIA) {
+                        if (age >= 18) {
+                            text = "You can drive!";
+
+                        }
+                      }
+
+-> Else :- We use else to specify a block of code to be executed if a condition is false
+           Eg :- if (hour > 18) {
+                 greeting = "Good Day";
+                 } else {
+                    greeting = "Good Evening";
+                 }
+
+# LOOPS
+-> For loop :- for (exp1; exp2; exp3) {
+                // code block to be executed
+}
+               Eg:- for (let i = 0; i < 5; i++) {
+                      text += "The number is " + i + " <br>";
+                    }
+
+# STRINGS
+
+== -> Represents expressions are equal and === -> Sreict check
+
+-> STRING METHODS
+1) string.length; -> Returns the length of the String
+2) string.charAt() -> Returns the character of the specified index in a string
+
+# Functions
+function sayHello () {
+    return "Hello World";
+}
+let message = sayHello();
+
+-> variable declared within JS function become LOCAL to the function
+Eg- function myFunction() {
+    let carName = "Volvo";
+    // Code here can jus e carName
+}
+//But code here cannot use carName
+
+// Array Functions
+
+let animals =  ["cat", "dog", "elephant", "tiger", "lion"];
+
+console.log(animals.length);
+console.log(animals[3]);
+console.log(animals[animals.length - 1]);
+console.log(animals.indexOf("dog"));
+console.log(animals.indexOf("monkey"));
+console.log(animals.includes("tiger"));
+console.log(animals.includes("monkey"));
+animals.push("monkey");
+console.log(animals);
+animals.pop();
+console.log(animals);
+animals.unshift("giraffe");
+console.log(animals);
+animals.shift();
+console.log(animals);
+
+
+console.log(animals.splice(0, 1));
+console.log(animals.splice(1, 2));
+console.log(animals.splice(1, 3));
