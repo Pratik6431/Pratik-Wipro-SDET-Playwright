@@ -41,3 +41,39 @@ let arr = [1, 2, 3, 4, 5, "Pratik"];
 arr.filter(x => typeof x === "number").map(y => y * 2).forEach(abc => console.log("Element after * 2:", abc * 2));
 // console.log(arr.find(x => x === "Aaryan1")); 
 // Arrow function is represented by =>
+
+
+console.log(Math.floor(Math.random() * 100) + 1);
+
+let strnum = "13";
+console.log(Number(strnum));
+console.log(String(13));
+
+let val = "0.10";
+console.log(parseInt(val));
+console.log(parseFloat(val));
+
+// Array Functions
+
+let animals =  ["cat", "dog", "elephant", "tiger", "lion"];
+
+console.log(animals.length);
+console.log(animals[3]);
+console.log(animals[animals.length - 1]);
+console.log(animals.indexOf("dog"));
+console.log(animals.indexOf("monkey"));
+console.log(animals.includes("tiger"));
+console.log(animals.includes("monkey"));
+animals.push("monkey");
+console.log(animals);
+animals.pop();
+console.log(animals);
+animals.unshift("giraffe");
+console.log(animals);
+animals.shift();
+console.log(animals);
+
+
+console.log(animals.splice(0, 1));
+console.log(animals.splice(1, 2));
+console.log(animals.splice(1, 3));
