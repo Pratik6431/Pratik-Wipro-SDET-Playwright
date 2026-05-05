@@ -115,7 +115,8 @@ console.log(animals.splice(1, 3));
 -> Syntax :- const result = array.reduce((accumulator, currentValue) => {
                return accumulator + currentValue;
                }, initialValue);
--> It takes two arguments: a callback function (with an accumulator and current value) and an optional initial value.
+-> It takes two arguments: a callback function (with an accumulator and current value) and an optional 
+   initial value.
 -> If no initial value is provided, the first element of the array is used as the starting accumulator.
 
 # SYNCHRONUS AND ASYNCHRONOUS
@@ -154,3 +155,31 @@ function getData() {
 
 -> In JavaScript, a Promise is like a real-life promise: it’s a placeholder for something that will happen
    in the future. It can either be kept (resolved) or broken (rejected).
+
+
+-> Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+-> Use of .then() for handling successful results (Resolve) and .catch() for managing errors (Reject).
+
+-> Studying the Fetch API:
+
+-> Practiced fetching real-world data from external endpoints (APIs) using the fetch() method.
+
+-> Understood the necessity of converting raw server responses into usable formats using the .json()
+   method.
+
+-> Efficient Data Manipulation:
+
+-> .filter(): Learned how to refine data sets by extracting only the items that meet specific
+              logical conditions (e.g., filtering by ID, category, or dimensions).
+
+-> .map(): Learned how to transform arrays by modifying existing properties or adding custom prefixes
+           to data strings to create a new, structured output.
+
+# Timers and Asynchronous Flow:
+
+-> setTimeout: Practiced scheduling one-time tasks after a specific delay (e.g., 2000ms or 5000ms).
+
+-> setInterval: Implemented recurring tasks that execute at fixed time intervals.
+
+-> Execution Order: Observed how JavaScript handles synchronous code (like console.log("test")) immediately while keeping asynchronous tasks (Promises and Timers) in the background.
