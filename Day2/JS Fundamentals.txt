@@ -139,3 +139,18 @@ Asynchronous : it allows JS initiate a long running task(like fetching data or a
 -> Promise : Always in one of these 3 states :- 1) Pending - The initial state. Task is still running.
                                                 2) Resolved - Task finished successfully.
                                                 3) Rejected - Task failed. Got error message.
+
+function getData() {
+    return new Promise((resolve, reject) => {     
+        if(2 > 3) {
+            // Success path
+            resolve("Data received");
+        } else {
+            // Failure path
+            reject('not working');
+        }
+    });
+}
+
+-> In JavaScript, a Promise is like a real-life promise: it’s a placeholder for something that will happen
+   in the future. It can either be kept (resolved) or broken (rejected).
