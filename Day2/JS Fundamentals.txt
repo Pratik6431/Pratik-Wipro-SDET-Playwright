@@ -117,3 +117,25 @@ console.log(animals.splice(1, 3));
                }, initialValue);
 -> It takes two arguments: a callback function (with an accumulator and current value) and an optional initial value.
 -> If no initial value is provided, the first element of the array is used as the starting accumulator.
+
+# SYNCHRONUS AND ASYNCHRONOUS
+
+Synchronus : it exexutes code line by line in order. Each operation must finish before the next line.
+
+Asynchronous : it allows JS initiate a long running task(like fetching data or a timer) and move on to
+               then next line of code without waiting for that task to finish.
+
+               Eg: console.lof("Start");
+
+               setTimeout(() => {
+                console.log("Timed Out (2 seconds)");
+               }, 2000);
+               console.log("End")
+
+               O/p : "Start"
+                     "End"
+                     "Timed Out (2 seconds)  --> After a delay of 2 seconds
+
+-> Promise : Always in one of these 3 states :- 1) Pending - The initial state. Task is still running.
+                                                2) Resolved - Task finished successfully.
+                                                3) Rejected - Task failed. Got error message.
