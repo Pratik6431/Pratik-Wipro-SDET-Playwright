@@ -1,3 +1,4 @@
+/*
 For git push
 1) git init
 2) Go to github -> Create new repo -> copy https url to that repo
@@ -182,4 +183,47 @@ function getData() {
 
 -> setInterval: Implemented recurring tasks that execute at fixed time intervals.
 
--> Execution Order: Observed how JavaScript handles synchronous code (like console.log("test")) immediately while keeping asynchronous tasks (Promises and Timers) in the background.
+-> Execution Order: Observed how JavaScript handles synchronous code (like console.log("test")) 
+   immediately while keeping asynchronous tasks (Promises and Timers) in the background.
+
+// -> OOPs in JavaScript
+// -> OOPs stands for Object Oriented Programming Ssytem. It is a programming paradigm that uses 
+// objects and classes to organize code and data.
+// -> In JavaScript, we can create objects using object literals, constructor functions, and classes.
+
+// -> Object Literals -> Object literals are a simple way to create objects in JacaScript.
+//  We can define an object using curly braces {} and assign properties and methods to it.
+
+// Ecample of Object Literals
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+
+// Explanation of the above code:
+// We have created an object called person using object literals. The object has two properties,
+//  name and age, and a method called greet. The greet method uses the this keyword to access 
+// the properties of the object and print a greeting message to the console.
+
+-> Constructor Functions -> Constructor functions are a way to create multiple objects with 
+   the same properties and methods.
+
+-> Encapsulation -> Encapsulation is the concept of building a protective barrier around the data 
+   and methods of an object to prevent unauthorized access and modification.
+
+-> Inheritance -> It is a fundamental principle of OOPs that allows a new class (called a child or subclass)
+                  to inherit properties and methods from an existing class (called a parent or
+                   superclass). This promotes code reusability and establishes a natural hierchical
+                    relationship between classes.
+
+-> Polumorphism -> Polymorphism is the ability of different objects to respond to the same method 
+                  call in a way that is specific to their own class. It allows objects of different 
+                  classes to be created from the same interface, enabling code to be more flexible 
+                  and executable.
+
+-> Abstraction -> Abstraction is the process of hiding the complex implementation details of an 
+                  object and exposing only the necessary features and functionalities to the user. 
+                  It allows us to focus on what an object does rather than how it does it.
