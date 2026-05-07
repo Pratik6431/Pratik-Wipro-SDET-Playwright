@@ -227,3 +227,45 @@ let person = {
 -> Abstraction -> Abstraction is the process of hiding the complex implementation details of an 
                   object and exposing only the necessary features and functionalities to the user. 
                   It allows us to focus on what an object does rather than how it does it.
+
+-> .Question 1: 
+The Flight Booking Data CleanerString Parsing:
+1) Utilized .split(':') and .split('-') to extract data from unformatted strings.
+2) Data Normalization: Used the Number() constructor to ensure the price is a valid numeric type.
+3) Error Handling: Implemented a fallback (price = 0) using isNaN() for corrupted or missing price data.
+4) Array Filtering: Used .filter() to include only items within a specific price
+                   range ($100 \le x \le 500$).
+5) Sorting Logic: Applied .sort((a, b) => a.price - b.price) for ascending order
+                 (cheapest first).
+6) Data Serialization: Converted the final array into a JSON string using JSON.stringify().
+
+Question 2:
+The E-Commerce Discount ApplicatorFunctional Callbacks:
+1) Defined a reusable isEligible function to decouple the logic from the main processor.
+2) Compound Logic: Checked multiple conditions using the && (AND) operator
+                   (Category: "Electronics" + Price: > $200).
+3) Object Transformation: Used the Spread Operator (...item) to maintain immutability while
+                          updating specific properties.
+4) Financial Formatting: Used .toFixed(2) to ensure the total savings are displayed correctly as currency.
+5) Asynchronous Simulation: Wrapped the return in a Promise with setTimeout (1000ms) to simulate a
+                            server-side delay.
+                            
+Question 3:
+The Movie Stream AnalyticsDelimiter Handling:
+1) Parsed data separated by the pipe symbol (|) to create structured JavaScript objects.
+2) Multi-Genre Filtering: Used the || (OR) operator to target specific genres ("Action" or "Sci-Fi").
+3) Threshold Validation: Filtered out content that did not meet the minimum view count
+                         requirement (> 5,000).
+4) Descending Sort: Implemented (a, b) => b.views - a.views to rank high-performing content at the top.
+5) Clean Output: Ensured the final data structure was returned as a standardized JSON string for
+                 front-end consumption.
+
+Question 4: 
+The Automated Payroll ProcessorDynamic Tax Calculation:
+1) Used a callback to apply different tax rates (20% vs 10%) based on a salary threshold.
+2) Ternary Operators: Utilized short-hand conditional logic for both the tax rate and the
+                      employee "status" ("Premium" vs "Standard").
+3) Accumulation: Calculated the totalNetPayout by summing up the netSalary of all processed employees.
+4) String Interpolation: Used Template Literals (backticks) to log a formatted summary including variables.
+5) Extended Delay: Simulated a heavier backend process using a 2000ms delay before resolving the
+                   final data.
