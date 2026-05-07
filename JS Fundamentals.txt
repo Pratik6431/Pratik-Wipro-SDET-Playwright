@@ -269,3 +269,39 @@ The Automated Payroll ProcessorDynamic Tax Calculation:
 4) String Interpolation: Used Template Literals (backticks) to log a formatted summary including variables.
 5) Extended Delay: Simulated a heavier backend process using a 2000ms delay before resolving the
                    final data.
+
+# ProtoType in JS
+
+-> Prototype is a powerful feature in JavaScript that allows us to create objects that can share
+   properties and methods through a common prototype. This can help us save memory and improve
+   performance by avoiding the need to create duplicate methods for each instance of an object.
+
+-> Code Example :-
+
+function person(name) {
+    this.name = name;
+
+}
+
+person.prototype.sayHi = function() {
+    console.log('hello ' + this.name);
+}
+const me = new person("Pratik");
+const you = new person("you");
+me.sayHi();
+you.sayHi();
+console.log(Object.getPrototypeOf(me) === person.prototype);
+console.log(me.sayHi === you.sayHi);
+
+-> Explanation of the above code: 
+1) We have created a constructor function called person which takes a name as an argumentand assigns it
+   to the name property of the object being created.
+2) We have added a method called sayHi to the prototype of the person constructor function.This means
+   that all instances of the person constructor function will have access to the sayHi method through
+   the prototype chain.
+3) We have created two instances of the person constructor function, me and you, and called the sayHi
+   method on both instances. Both instances will have access to the same sayHi method through the
+   prototype chain, which is why we see the same output when we call sayHi on both instances.
+4) We have also checked if the prototype of me is the same as the prototype of person, which is true.
+5) Finally, we have checked if the sayHi method of me is the same as the sayHi method of you, which is
+   also true, because both instances share the same sayHi method through the prototype chain.
