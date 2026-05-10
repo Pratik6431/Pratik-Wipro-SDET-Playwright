@@ -15,4 +15,4 @@ const shoppingCart = {
     }
 };
 
-console.log(`Total Bill: $${shoppingCart.calculateTotal()}`); 
+console.log(`Total Bill: $${shoppingCart.calculateTotal()}`);
