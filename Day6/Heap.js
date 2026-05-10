@@ -61,3 +61,8 @@ console.log(obj4)
 //     c.push(b[i]);
 // }
 console.log(c)
+
+// Heap is used for dynamic memory alocation, where memory is allocated and deallocated in an
+// arbitrary order. It is used for storing objects, functions, and other complex data structures
+// that require more memory than the stack can provide. The heap allows for efficient memory
+// management and is essential for languages that support dynamic memory allocation, such as JavaScript.
