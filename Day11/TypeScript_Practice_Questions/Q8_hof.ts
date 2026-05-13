@@ -14,7 +14,6 @@ const info = async (id: number): Promise<string> => {
     return `Data for ID: ${id}`
 }
 
-
 async function dryRun() {
     const getData = safeExecute(info);
     const res = await getData(10);

@@ -1,6 +1,7 @@
 type TaskStatus = 'Open' | 'InProgress' | 'Closed';
 
 function handleTask(status: TaskStatus) {
+  
     switch (status) {
         case 'Open' :
             console.log("Task not started.");
