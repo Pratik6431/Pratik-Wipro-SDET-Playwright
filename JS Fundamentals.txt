@@ -305,3 +305,9 @@ console.log(me.sayHi === you.sayHi);
 4) We have also checked if the prototype of me is the same as the prototype of person, which is true.
 5) Finally, we have checked if the sayHi method of me is the same as the sayHi method of you, which is
    also true, because both instances share the same sayHi method through the prototype chain.
+
+# PLAYWRIGHT
+1) npm init playwright@latest -> to initialize the project
+2) Playwright downloads dedicated Chromium, firefox and WebKit binaries during setup to ensure consistent test results.
+3) Playwright uses a persistent WebSocket connection for direct communication and browsers, whereas selenium relies on slower webdriver HTTP protocol.
+4) It is automative
